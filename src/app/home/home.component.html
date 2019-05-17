@@ -1,0 +1,14 @@
+<div class="text-centre container">
+  <br>
+  <br>
+  <div class="info card card-body">
+    <h1><strong>City:  {{weather.city.name}}</strong></h1>
+    <h5 class="list-group-item">Longitude: {{weather.city.coord.lon}}</h5>
+    <h5 class="list-group-item">Latitude: {{weather.city.coord.lat}}</h5>
+    <h5 class="list-group-item">Temp: {{weather.list[0].main.temp}}</h5>
+    <h5 class="list-group-item">TempMax: {{weather.list[0].main.temp_max}}  </h5>
+    <h5 class="list-group-item">TempMin: {{weather.list[0].main.temp_min}}</h5>
+    <h5 class="list-group-item">The Weather Description: {{weather.list[0].weather[0].description}}</h5>
+    <h5 class="list-group-item">Humidity: {{weather.list[0].main.humidity}}</h5>
+  </div>
+</div>

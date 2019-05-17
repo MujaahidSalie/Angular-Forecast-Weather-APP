@@ -1,0 +1,15 @@
+<div class="container card card-body md-1">
+  <h1 class="text-center primary "> Enter City Name & Code </h1>
+  <form >
+    <div class="form-group">
+      <label> <strong>City:</strong>
+        <input type="text"  class="form-control"  name="city"  placeholder="Enter name of the city..." [(ngModel)]="city"   >
+      </label>
+      <br>
+      <label> <strong>Code:</strong>
+        <input type="text"  class="form-control" name="code" placeholder="Enter the country code..." [(ngModel)]="code"   >
+      </label>
+    </div>
+    <button class="btn btn-success" (click)="saveForm()" >Search City</button>
+  </form>
+</div>

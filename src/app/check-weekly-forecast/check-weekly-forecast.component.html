@@ -1,0 +1,21 @@
+<div class="card card-body">
+  <div class="forecast" *ngFor="let dayWeather of forecast">
+    <div class="day">
+      <h2 class="date">{{dayWeather.date | date: 'MMMMd'}}</h2>
+      <img src="http://weather.omgez911.com/icons/{{dayWeather.img}}.png" alt="weather images">
+      <h2 class="description">{{dayWeather.description}}</h2>
+      <h3 class="tempM">{{dayWeather.temp}}&deg;</h3>
+    </div>
+  </div>
+</div>
+<div class="card card-body">
+  <h1 class="text-center primary "> Enter City Name</h1>
+  <form [formGroup]="forecastForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label> <strong>City:</strong>
+        <input type="text" class="form-control" formControlName="forecastCity" placeholder="Enter name of the city..."  >
+      </label>
+    </div>
+    <button class="btn btn-success">Search City</button>
+  </form>
+</div>
