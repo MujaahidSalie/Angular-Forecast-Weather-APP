@@ -1,0 +1,12 @@
+h1 class="text-center primary">Forecast Weather App</h1>
+<br>
+<div class="text-center container">
+  <a routerLink="/Home" class="btn btn-success">View Weather</a>
+  <br>
+  <br>
+  <a routerLink="/check-weekly-forecast" class="btn btn-success">Check Weekly Forecast</a>
+  <br>
+  <br>
+  <a routerLink="/search-for-a-city" class="btn btn-success">Search For A City</a>
+<router-outlet></router-outlet>
+</div>
